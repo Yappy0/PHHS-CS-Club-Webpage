@@ -2,5 +2,9 @@ var slidesRequest = new XMLHttpRequest();
 slidesRequest.open("GET", "https://csclub.pythonanywhere.com/static/slides.json", false);
 slidesRequest.send();
 if (slidesRequest.status == 200){
-  document.getElementById("slides-section").innerHTML = slidesRequest.responseText;
+  slides = JSON.parse(slidesRequest.responseText);
+  content = "";
+  for (const [key, value of Object.entries(slides)]){
+    content += "<div class=\"content\"><h1>" + key + "</h1><a href=\"" + value + "\">Slides</a></div>"
+  }
 }
