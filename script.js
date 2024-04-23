@@ -7,7 +7,7 @@ if (slidesRequest.status == 200){
   entries = Object.entries(slides);
   entries.reverse();
   for (const [key, value] of entries){
-    content += "<div class=\"content\"><h1>" + key + "</h1><a href=\"" + value + "\">Slides</a></div>";
+    content += "<div class=\"content\"><h1>" + key + "</h1><p><a href=\"" + value + "\">Slides</a></p></div>";
   }
   document.getElementById("slides-section").innerHTML = content;
 }
