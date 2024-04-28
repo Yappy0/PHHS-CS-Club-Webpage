@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  font-family: 'Courier New', Courier, cursive;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(50, 30, 138), rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+h1{
+  margin: 0;
+}
+
+p{
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  overflow: auto;
+}
+
+.nav{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.nav-block{
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(7, 4, 24));
+}
+
+.nav-object{
+  width: 20%;
+  height: 50px;
+  
+  float: left;
+  position: relative;
+  text-align: center;
+
+  background-color: #1D263B;
+}
+
+.nav-object:hover{
+  height: 80px;
+}
+
+.nav-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 16px;
+}
+
+.header{
+  padding-top: 30px;
+  width: 100%;
+  height: 150px;
+  
+  background-image: linear-gradient(rgb((10, 1, 49)), rgb(18, 5, 73));
+  text-align: center;
+}
+
+.content{
+  margin: 30px;
+  border-radius: 20px;
+  border-style: solid;
+  overflow: auto;
+}
+
+.content > *{
+  margin: 20px;
+}
+
+.content-image{
+  margin: 20px;
+  float: right;
+  height: 20vw;
+  max-height: 150px;
+  margin-top: 2em;
+}
+
+.footer-block{
+  height: 50px;
+}
+
+.footer{
+  width: 100vw;
+  height: 50px;
+  background-color: #1D263B;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+img {
+  border-radius: 40px;
+  background: #92fa0000;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
+}
