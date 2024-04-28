@@ -6,8 +6,10 @@ html {
 body{
   margin: 0;
   font-family: 'Courier New', Courier, cursive;
-  background-color: #AFB3F7;
-  color: #F3FFBD;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(50, 30, 138), rgb(0, 0, 0));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
 }
 
 h1{
@@ -34,11 +36,11 @@ a {
 .nav-block{
   width: 100%;
   height: 80px;
-  background-color: #387780;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(7, 4, 24));
 }
 
 .nav-object{
-  width: 25%;
+  width: 20%;
   height: 50px;
   
   float: left;
@@ -66,8 +68,7 @@ a {
   width: 100%;
   height: 150px;
   
-  background-color: #387780;
-
+  background-image: linear-gradient(rgb((10, 1, 49)), rgb(18, 5, 73));
   text-align: center;
 }
 
@@ -87,6 +88,7 @@ a {
   float: right;
   height: 20vw;
   max-height: 150px;
+  margin-top: 2em;
 }
 
 .footer-block{
@@ -100,4 +102,12 @@ a {
   text-align: center;
   position: fixed;
   bottom: 0;
+}
+
+img {
+  border-radius: 40px;
+  background: #92fa0000;
+  padding: 20px;
+  width: 300px;
+  height: 150px;
 }
